@@ -1,1 +1,7 @@
-DNS server notes
+# DNS Server
+
+這個資料夾放的是我在自架小型機房裡使用的 DNS 服務設定。
+
+- 部署方式：在 ESXi 上的虛擬機中安裝 Linux，透過 Docker 佈署 DNS 服務容器。
+- 主要用途：提供內部服務（班級網站、模擬 Instagram 網站等）的名稱解析，方便在內網以網域名稱而不是 IP 存取。
+- 設計重點：區分內部使用的網域與對外公開的網域設定，配合 FortiGate 防火牆與 Cloudflare 的 DNS 設定，維持小型機房內外部存取的一致性。
